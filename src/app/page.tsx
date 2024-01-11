@@ -28,7 +28,7 @@ export default function Home() {
         CONTRATAR TRÁFEGO PAGO E ESTRATÉGIA
       </a>
 
-      <a className={style.btnLandingPage} href="">
+      <a className={style.btnLandingPage} href="https://www.igormello.com/mentoria-o-unico-caminho/">
         <p>
           Aplicação Mentoria <br /> O Único Caminho
         </p>
