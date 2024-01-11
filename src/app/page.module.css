@@ -1,0 +1,129 @@
+.app{
+  position: relative;
+
+}
+
+.background{
+display: flex;
+
+background-image: url('https://www.igormello.com/wp-content/uploads/2023/12/FOTO-FUNDO-3.webp');
+background-repeat: no-repeat;
+background-position: 563px 0;
+
+height: 100%;
+width: 100%;
+
+position: absolute;
+z-index: 1;
+}
+
+.background::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8)
+
+}
+
+.content{
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  margin-top: -50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 1.5rem ;
+}
+
+.main a{
+  text-decoration: none;
+  text-align: center;
+}
+
+.btnForm{
+ 
+  max-width: 350px;
+  padding: 2rem 2.5rem;
+
+  background: linear-gradient(65deg, #05B705, black, #05B705);
+
+  border-radius: 20px;
+
+  color: #FFF;
+  /* font-weight: 500; */
+  font-size: 23px;
+
+}
+
+.btnLandingPage{
+
+  background-color: #EAEAEA;
+  color: #000;
+
+  max-width: 350px;
+  padding: 1rem 1.5rem;
+
+  border-radius: 5px;
+}
+
+.btnLandingPage p:nth-child(1){
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.btnLandingPage p:nth-child(2),
+.btnLandingPage p:nth-child(3){
+  font-size: 14px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+
+  margin-top: 3.5rem;
+  margin-bottom: 5rem;
+}
+
+.footer p {
+  margin-top: 1px;
+}
+
+.footer p:nth-child(2){
+  font-weight: bold;
+}
+
+@media (min-width: 1650px) {
+
+  .app{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .background {
+    background-position: 80% 0
+    
+  }
+}
+
+
